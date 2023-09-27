@@ -683,9 +683,10 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 						// these IDs from the previous steps
 						emailjs.sendForm('service_9624evn', 'template_3im2op7', '#contact-form')
 							.then(function() {
-								console.log('SUCCESS!');
-							}, function(error) {
-								console.log('FAILED...', error);
+								$('#btn-send-message').val('Sent!');
+								$('#user_name').val('');
+								$('#user_email').val('');
+								$('#message').val('');
 							});
 					});
 				}
