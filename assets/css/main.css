@@ -2940,31 +2940,38 @@ input, select, textarea {
 		.gallery a {
 			border-bottom: 0;
 			display: block;
-			margin: 1.25rem 0 0 1.25rem;
+			margin: 1.25rem 0 0 0;
 			outline: 0;
 			position: relative;
 			width: calc(50% - 1.25rem);
 		}
 
-			.gallery a img {
-				display: block;
-				height: 25vw;
-				min-height: 18rem;
-				object-fit: cover;
-				object-position: center;
+		.gallery a img {
+			display: block;
+			height: 25vw;
+			min-height: 18rem;
+			object-fit: contain;
+			object-position: center;
+			box-shadow: -5px -5px 5px #e7eaec;
+		}
+
+		.gallery a.landscape {
+			width: 100%;
+		}
+
+		.gallery a.portrait {
+			width: 27%;
+			margin: 1rem;
+		}
+
+			.gallery a.landscape img {
+				height: auto;
 				width: 100%;
 			}
-
-			.gallery a.landscape {
-				width: 100%;
-			}
-
-				.gallery a.landscape img {
-					height: auto;
-				}
 
 			.gallery a.portrait img {
-				height: auto;
+				height: 100%;
+				width: 100%;
 			}
 
 		.gallery .modal {
