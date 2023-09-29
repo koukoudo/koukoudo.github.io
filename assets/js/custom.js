@@ -60,11 +60,11 @@
 
             var typed = new Typed('#about-text', {
                 strings: ['I am a fullstack software developer with a variety of personal and commercial projects under my belt, the most recent of which being a 25000-user music distribution application owned by Horus Music, written in PHP with the Symfony framework.',
-                            'Over 10 years of programming, I have learned to work with a diverse array of technologies across the backend, frontend and database layers, including JavaScript, PHP, Java, Python, MySQL, HTML and CSS, among others.',
+                            'During my 10 years of programming, I have learned to work with a diverse array of technologies across the backend, frontend and database layers, including JavaScript, PHP, Java, Python, MySQL, HTML and CSS, among others.',
                             'With a degree in Computer Science and Economics, I have a unique ability to analyze complex business problems and translate them into user-friendly technical solutions.',
-                            'In addition, my experience in IT customer support and technical leadership roles enables me to collaborate effectively with a variety of stakeholders and develop with the end-user in mind, to ensure a final product of high quality.',
-                            'I especially enjoy creative problem-solving, team work and chocolate before bed.',
-                            'Thanks for listening to my shpiel.'],
+                            'In addition, my experience in IT customer support and technical leadership roles have taught me to collaborate effectively with a variety of stakeholders and develop with the end-user in mind, to ensure a final product of high quality.',
+                            'I especially enjoy creative problem-solving, team work and chocolate at bedtime.',
+                            'Thank you for listening to my shpiel.'],
                 typeSpeed: 15,
                 backSpeed: 1,
                 startDelay: 3500,
