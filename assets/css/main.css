@@ -1,6 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*
 	Paradigm Shift by HTML5 UP
@@ -3247,14 +3248,14 @@ input, select, textarea {
 			left: 0;
 			position: absolute;
 			top: 0;
-			width: 50vw;
+			width: 40vw;
 			z-index: -1;
 		}
 
 		#wrapper section {
 			display: grid;
 			grid-template-areas: "header content" "footer content";
-			grid-template-columns: 50vw 50vw;
+			grid-template-columns: 40vw 60vw;
 			grid-template-rows: 1fr;
 		}
 
@@ -3303,8 +3304,8 @@ input, select, textarea {
 			position: relative;
 		}
 
-			#wrapper > section > header:before {
-				background: #3147596f;
+			#wrapper > section:not(:first-child) > header:before {
+				background: white;
 				content: '';
 				display: block;
 				margin-top: 1rem;
@@ -3312,12 +3313,12 @@ input, select, textarea {
 				width: 2px;
 			}
 
-			#wrapper > section > header h1, #wrapper > section > header h2 {
+			#wrapper > section:not(:first-child) > header h1, #wrapper > section:not(:first-child) > header h2 {
 				position: relative;
 			}
 
-				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
-					background: #3147596f; 
+				#wrapper > section:not(:first-child) > header h1:before, #wrapper > section:not(:first-child) > header h2:before {
+					background: white; 
 					content: '';
 					display: block;
 					height: 2px;
@@ -3325,8 +3326,8 @@ input, select, textarea {
 					top: 1rem;
 				}
 
-				#wrapper > section > header h1:after, #wrapper > section > header h2:after {
-					background: #314759; /* timeline dots */
+				#wrapper > section:not(:first-child) > header h1:after, #wrapper > section:not(:first-child) > header h2:after {
+					background: white; /* timeline dots */
 					border-radius: 0.5rem;
 					content: '';
 					display: block;
@@ -3397,9 +3398,9 @@ input, select, textarea {
 		#wrapper .copyright {
 			color: rgba(0, 0, 0, 0.25);
 			font-size: 1rem;
-			left: 50vw;
+			left: 40vw;
 			position: relative;
-			width: 50vw;
+			width: 60vw;
 		}
 
 			#wrapper .copyright a {
@@ -3425,7 +3426,7 @@ input, select, textarea {
 
 		#wrapper > section > header:before {
 			height: calc(100% + 10rem);
-			left: calc(50vw - 5rem);
+			left: calc(40vw - 5rem);
 		}
 
 		#wrapper > section > header h1:before, #wrapper > section > header h2:before {
@@ -3438,7 +3439,7 @@ input, select, textarea {
 		}
 
 		#wrapper > section > .content > section {
-			left: calc(-50vw - 5rem);
+			left: calc(-40vw - 5rem);
 		}
 
 			#wrapper > section > .content > section > header {
@@ -3450,7 +3451,7 @@ input, select, textarea {
 		}
 
 		#wrapper > section.intro > header:before {
-			margin-left: calc(50vw - 10rem);
+			margin-left: calc(40vw - 10rem);
 		}
 
 		@media screen and (max-width: 1152px) {
@@ -3466,7 +3467,7 @@ input, select, textarea {
 		}
 
 		#wrapper > section:last-of-type > header:after {
-			left: calc(50vw - 5rem - 0.25rem + 1px);
+			left: calc(40vw - 5rem - 0.25rem + 1px);
 		}
 
 		#wrapper .copyright {
@@ -3498,7 +3499,7 @@ input, select, textarea {
 
 				#wrapper > section > header:before {
 					height: calc(100% + 8rem);
-					left: calc(50vw - 4rem);
+					left: calc(40vw - 4rem);
 				}
 
 				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
@@ -3511,7 +3512,7 @@ input, select, textarea {
 				}
 
 				#wrapper > section > .content > section {
-					left: calc(-50vw - 4rem);
+					left: calc(-40vw - 4rem);
 				}
 
 					#wrapper > section > .content > section > header {
@@ -3523,7 +3524,7 @@ input, select, textarea {
 				}
 
 				#wrapper > section.intro > header:before {
-					margin-left: calc(50vw - 8rem);
+					margin-left: calc(40vw - 8rem);
 				}
 
 		}
@@ -3543,7 +3544,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 				#wrapper > section:last-of-type > header:after {
-					left: calc(50vw - 4rem - 0.25rem + 1px);
+					left: calc(40vw - 4rem - 0.25rem + 1px);
 				}
 
 				#wrapper .copyright {
@@ -3967,26 +3968,37 @@ input, select, textarea {
 	}
 
 	#name {
-		font-size: 2.7em; 
+		font-size: 2.5em; 
 		text-align: left; 
 		letter-spacing: 2px;
-		text-shadow: 
-		-1px 1px 0 #00000086,
-		-2px 2px 0 #00000086,
-		-3px 3px 0 #00000086,
-		-4px 4px 0 #00000086,
-		-3px 3px 0 #00000086,
-		-2px 2px 0 #00000086,
-		-1px 1px 0 #00000086;
+		font-family: 'Merienda', cursive;
+		font-weight: 300;
+		text-shadow: -1px 1px 5px #00000086;
+		margin-top: 1rem !important;
 	}
 
-	#role-description  {
-		font-size: 1em; 
+	#role  {
+		font-size: 1.4em; 
+		text-shadow: -1px 1px 5px #00000086;
 		text-decoration: underline; 
 		text-underline-offset: 7px; 
 		text-decoration-thickness: 1px; 
 		text-decoration-color: #314759; 
 		text-align: left; 
+		margin-bottom: 1rem !important; 
+		margin-top: 3rem !important;
+	}
+
+	#role-description {
+		text-align: left;
+		margin-bottom: 3rem !important;
+		text-shadow: -1px 1px 5px #00000086;
+	}
+
+	#profile-image {
+		margin-left: auto;
+		width: 30%;
+		margin: 1rem 0 1rem 0 !important;
 	}
 
 	@keyframes pulse {
