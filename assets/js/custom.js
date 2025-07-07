@@ -59,7 +59,7 @@
             });
 
             var typed = new Typed('#about-text', {
-                strings: ["My name is Nikolaos and I am a web developer based in Johannesburg, South Africa. &#127487;&#127462;",
+                strings: ["My name is Nikolaos and I am a software developer based in Johannesburg, South Africa. &#127487;&#127462;",
                             "With around 10 years of programming experience, I specialize in developing and maintaining custom web sites and web applications.",
                             "The biggest marketplace today is virtual, with over 2 billion people visiting the web each day, meaning an online presence is more necessary than ever before.",
                             "Plus, technology can make business a whole lot easier - think automating workflows, tracking expenses, managing customers, all at the touch of a button.",
